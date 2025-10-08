@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aaron Daniel | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#fff;color:#1a1a1a;scroll-behavior:smooth;line-height:1.6}
+a{text-decoration:none}
+:root{
+  --purple:#5b2c98;
+  --lightpurple:#9b59b6;
+  --lightgray:#f8f6ff;
+}
+.navbar{position:fixed;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 50px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.05);z-index:1000;transition:.3s}
+.logo{font-weight:700;color:var(--purple);letter-spacing:1px}
+.logo span{color:var(--lightpurple)}
+nav a{margin-left:25px;color:var(--purple);font-weight:500;transition:.3s}
+nav a:hover{color:var(--lightpurple)}
+.hero{height:100vh;background:linear-gradient(rgba(91,44,152,0.6),rgba(91,44,152,0.6)),url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=80')center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:0 25px}
+.hero h1{font-size:3rem;font-weight:700;margin-bottom:10px;letter-spacing:1px}
+.hero p{max-width:650px;margin:auto;margin-bottom:25px;font-size:1.05rem}
+.btn{background:#fff;color:var(--purple);padding:12px 28px;border-radius:5px;font-weight:600;transition:.3s}
+.btn:hover{background:var(--purple);color:#fff}
+section{scroll-margin-top:80px}
+.about{background:var(--lightgray);padding:100px 50px;display:flex;justify-content:center;flex-wrap:wrap;gap:40px;align-items:center}
+.about img{width:350px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+.about-text{flex:1;min-width:300px}
+.about-text h2{color:var(--purple);margin-bottom:15px;font-size:1.8rem}
+.about-text p{margin-bottom:15px}
+.about-text ul{margin:10px 0 20px 18px}
+.about-text li{margin-bottom:6px}
+.social a{color:var(--purple);margin-right:12px;font-weight:500}
+.social a:hover{color:var(--lightpurple)}
+.projects{padding:100px 50px;text-align:center;background:#fff}
+.projects h2{color:var(--purple);margin-bottom:60px;font-size:1.8rem}
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.project-card{background:var(--lightgray);border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.05);transition:.4s ease;cursor:pointer}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,0.1)}
+.project-card img{width:100%;height:220px;object-fit:cover;transition:transform .4s ease}
+.project-card:hover img{transform:scale(1.05)}
+.project-card h3{color:var(--purple);margin:15px}
+.project-card p{margin:0 15px 20px;color:#444}
+.contact{padding:100px 50px;text-align:center;background:var(--lightgray)}
+.contact h2{color:var(--purple);margin-bottom:10px;font-size:1.8rem}
+.contact p{margin-bottom:20px;font-size:1.05rem}
+footer{background:var(--purple);color:#fff;text-align:center;padding:20px;font-size:.9rem;letter-spacing:.3px}
+.fade-in{opacity:0;transform:translateY(30px);animation:fadeUp 1s forwards}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+@media(max-width:768px){
+  .navbar{flex-direction:column;padding:15px 25px}
+  .about{padding:70px 30px}
+  .about img{width:100%}
+}
+</style>
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">AARON <span>DANIEL</span></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero fade-in">
+  <div>
+    <h1>Aaron Daniel</h1>
+    <p>Freelance photographer, videographer, and editor — a one-man production company crafting visuals that speak louder than words.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+
+<section id="about" class="about fade-in">
+  <img src="https://blog.creativeclicks.art/wp-content/uploads/2025/10/aaron.jpg" alt="Aaron Daniel portrait">
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>I’m passionate about storytelling through visual media. With strong skills in <b>Adobe Premiere Pro, After Effects, Lightroom, Photoshop, and Illustrator</b>, I manage end-to-end production — from concept, shoot, to edit.</p>
+    <p>Armed with a Mass Communication background from <b>INTI International University</b>, I blend creative intuition with technical precision to deliver impactful results.</p>
+    <ul>
+      <li>🎬 Cinematographer – “You Will Never Find Me” short film</li>
+      <li>🎥 Camera Operator – KHILAF theatre by JKKN Negeri Sembilan</li>
+      <li>📸 Photographer – “Malam Teromba Puisi & Lagu Puisi” concert</li>
+      <li>🎤 Emcee – Alibaba Cloud & Lazada University Talk</li>
+    </ul>
+    <div class="social">
+      <a href="https://instagram.com/ayyrnz.phtgrphy" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/aaron-daniel-bb7121207" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects fade-in">
+  <h2>Featured Work</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Short Film">
+      <h3>Short Film — “You Will Never Find Me”</h3>
+      <p>Cinematographer & editor for a cinematic short film focused on emotional tone and visual storytelling.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://blog.creativeclicks.art/wp-content/uploads/2025/10/stefano-stacchini-jhPSJDhiRyQ-unsplash-1-scaled.jpg" alt="KHILAF Theatre">
+      <h3>KHILAF Theatre</h3>
+      <p>Camera operator and switcher for a multi-camera theatre production by JKKN Negeri Sembilan.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://images.pexels.com/photos/1767434/pexels-photo-1767434.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Malam Teromba">
+      <h3>Malam Teromba Puisi & Lagu Puisi</h3>
+      <p>Photographer & videographer for a live concert event combining art, poetry, and music.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Event Hosting">
+      <h3>Event Hosting</h3>
+      <p>Hosted Alibaba Cloud and Lazada University talk — delivering engaging and confident stage presence.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://images.pexels.com/photos/2265487/pexels-photo-2265487.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mini Documentary">
+      <h3>Mini Documentary</h3>
+      <p>Produced and directed a mini-documentary in collaboration with Vehaara Arts Studio on Bharathanatyam culture.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact fade-in">
+  <h2>Let's Work Together</h2>
+  <p>Got a project or event in mind? I’m open for freelance collaborations, photography sessions, and video production.</p>
+  <a href="mailto:AaronDanielJr03@gmail.com" class="btn">Email Me</a>
+</section>
+
+<footer>
+  <p>© 2025 Aaron Daniel · DNAS Studio</p>
+</footer>
+<script>
+// fade animation trigger
+const elements=document.querySelectorAll('.fade-in');
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+ if(entry.isIntersecting) entry.target.classList.add('visible');
+});
+});
+elements.forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
